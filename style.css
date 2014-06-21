@@ -1,0 +1,245 @@
+/*  Stylesheet organized as follows
+ *  -Classes
+ *  -Body
+ *  -Header
+ *  -Navigation
+ *  -Section IDs
+ *  -Footer
+ *  -Media Queries
+*/
+
+/*
+ *
+ *  Classes
+ *
+ *
+*/
+
+.center {
+    display: table;
+    margin: 0 auto;
+}
+
+.col350 {
+    float: left;
+    width: 350px;
+    margin: 25px 15px 0px 15px;
+}
+
+.row {
+    display: table;
+    list-style-type: none;
+    margin: 0 auto; 
+}
+
+.row:after {
+    clear: both;
+}
+
+.social {
+    background-color: #FFFFFF;
+    height: 200px;
+    width: 200px;
+    /* get that nice rounded look */
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    margin: 25px 25px 0px 25px;      
+}
+
+.social img {
+    height: 100px;
+    width: 100px;
+    /* apply half the image H/W as top/left margins to center */
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.social:hover {
+    box-shadow: 0px 0px 25px #eb7578;
+    -moz-box-shadow: 0 0 25px #eb7578;
+    -webkit-box-shadow: 0 0 25px #eb7578;    
+}
+
+/*
+ *
+ *  Body stuff
+ *
+ *
+*/
+
+a, a:visited {
+    color: #01A3B2;
+    text-decoration: none; 
+}
+
+a:hover {
+    color: #eb7578;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.15;
+    margin: 0 auto;
+    max-width: 800px;
+    min-width: 200px;
+    padding: 0px 5px 0px 5px;
+}
+
+em {
+    font-style: italic;
+}
+
+h1, h2, h3 {
+    color: #01A3B2;
+    padding: 10px 0 0 10px;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+img:after {
+    clear: both;
+}
+
+li {
+    float: left;
+}
+
+li:after {
+    clear: both;
+}
+
+p {
+    margin: 1em 0 0 0;
+}
+
+strong {
+    font-weight: bold;
+}
+
+/*
+ *
+ *  Header
+ *
+ *
+*/
+
+header {
+    padding: 0px 0px 25px 0px;
+}
+
+header img {
+    float: left;
+}
+
+/*
+ *
+ *  Navigation
+ *
+ *
+*/
+
+nav {
+    float: right;
+    padding: 10px 10px 0 0;
+}
+
+nav a {
+    display: block;
+    width: 80px;
+}
+
+/*
+ *
+ *  Section IDs
+ *
+ *
+*/
+
+#about {
+    background-color: #F7F7F7;
+    margin: 5px 0 0 0;
+    padding: 0px 0px 25px 0px;   
+}
+
+#contact {
+    background-color: #D3D3D3;
+    margin: 5px 0 0 0;
+    padding: 0px 0px 25px 0px;
+}
+
+#facebook {
+    background-color: #3B5998;
+}
+
+#facebook img{
+    /* 'f' in FB logo appears in lower right, needs more margin adjusting to center */
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+#projects {
+    clear: both;
+    background-color: #F7F7F7;
+    margin: 5px 0 0 0;    
+    padding: 0px 0px 25px 0px;    
+}
+
+#projects img {
+    width: 100%;
+}
+
+#twitter {
+    background-color: #55ACEE;
+}
+
+/*
+ *
+ *  Footer
+ *
+ *
+*/
+
+footer {
+    display: block;
+    background-color: #808080;
+    margin: 5px 0 0 0;
+    padding: 25px 0 25px 0;
+}
+
+footer p {
+    font-style: bold;
+    margin: 0 auto;
+}
+
+footer a {
+    color: #ffffff;
+}
+
+footer a:visited {
+    color: #ffffff;
+}
+
+/*
+ *
+ *  Media queries
+ *
+ *
+*/
+
+@media all and (max-width: 400px) {
+    .col350 {
+        width: 200px;
+    }
+}
