@@ -1,0 +1,165 @@
+html, body {
+	height: 100%;
+	font-style: Helvetica, sans-serif;
+	font-weight: 1em;
+	background: repeating-linear-gradient(55deg, #111, #111 4px, #222 4px, #222 8px);
+	text-align: center;
+	margin: 0;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+img#train {
+	width: 150px;
+	position: relative;
+	left: 300px;
+	visibility: collapse;
+}
+
+img:before{
+	clear: both;
+}
+
+ul {
+	display: table;
+	list-style: none;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+}
+
+li:nth-child(3n+1){
+	background-color: #ABE0D6;
+}
+
+li {
+	display: table;
+	float: left;
+	height: 200px;
+	max-height: 200px;
+	width: 350px;
+	margin: 10px;
+	min-width: 300px;
+	box-shadow: 3px 3px 5px black;
+	border-radius: 5px;
+	background-color: #FFA185;
+}
+
+li:hover{
+	cursor: pointer;
+}
+
+li div {
+	display: table-cell;
+	vertical-align: middle;
+	overflow: visible;
+}
+li img{
+	width: 100%;
+}
+h1 {
+	font-style: PosterBodoniBT, sans-serif;
+	padding: 10px 0 0 0;
+} 
+
+h2, h3 {
+	font-style: PosterBodoniBT, sans-serif;
+}
+
+article {
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	min-height: 100%;
+	background-color: white;
+	text-align: center;
+}
+
+#mask{
+	overflow: hidden;
+	height: 200px;
+	width: 400px;
+	margin-left: 0px;
+	margin-top: 0px;
+}
+
+#div-2{
+	overflow: visible;
+}
+#mask ul{
+	position: relative;
+	margin-left: 0px;
+	margin-top: 0px;
+	height: 100%;
+	width: 100%;
+}
+
+#div-1{
+	overflow: hidden;
+}
+
+#div-2 li{
+	height: 100%;
+	position: absolute;
+	top: -200px;
+	left: 0px;
+	width: 100%;
+	list-style: none; 
+	margin-left: 0px;
+	margin-top: 0px;
+}
+
+.firstanim {
+	animation: img1 10s linear infinite;
+}
+
+.secondanim {
+	animation: img2 10s linear infinite;
+}
+
+@keyframes img1 {
+	0% {top: 0px;}
+	10% {top: 0px;}
+	40% {top: 0px;}
+	50% {top: -200px;}
+	80% {top: -200px;}
+	100% {top: 0px;}	
+}
+
+@keyframes img2 {
+	0% {top: 200px;}
+	10% {top: 200px;}
+	40% {top: 200px;}
+	50% {top: 0px;}
+	80% {top: 0px;}
+	100% {top: 200px;}
+}
+
+@media only screen and (max-device-width: 800px){
+    #div-1 li{
+	position: relative;
+    }
+    #div-2 li {
+	top: 0px;
+	left:50%;
+    }
+    ul {
+	width: 90%;
+    }
+    li {
+    	float: none;
+	width: 90%;
+    }
+    body {
+	font-size: 2.5em;
+    }
+    img#train{
+	width: 350px;
+    }
+}
