@@ -5,6 +5,21 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Casey Codes</title>
     <style>
+        h1, h2, h3 {
+            color: rgb(220,220,220);
+        }
+        h1 {
+            font-size: 5em;
+            margin: 0;
+        }
+        h2 {
+            font-size: 4em;
+            margin: 0;
+        }
+        h3 {
+            font-size: 2em;
+            margin: 0;
+        }
         html, body {
             padding: 0;
             margin: 0;
@@ -26,6 +41,36 @@
             margin-right: 10px;
             list-style: none;
         }
+        #red {
+            background-color: rgb(200, 0, 0);
+            height: 100px;
+            width: 100px;
+            margin: auto;
+        }
+        #green {
+            height: auto;
+            max-width: 1000px;
+            margin: auto;
+            position: relative;
+        }
+        #blue {
+            background-color: rgb(0, 0, 200);
+            height: 100px;
+            width: 100px;
+            margin: auto;
+        }
+        div img {
+            width: 100%;
+            filter: grayscale(100%);
+        }
+        .myName{
+            position: absolute;
+            top: 100px;
+            width: 100%;
+        }
+        .myName h1, .myName h2, .myName h3 {
+            text-align: center;
+        }
     </style>    
     </head>
     <body>
@@ -42,6 +87,22 @@
             </nav>
         </header>
         <article>
+            <section>
+            </section>
+            <section>
+                <div id="green">
+                    <img src="images/startrails_1920.jpg"/>
+                    <div class="myName">
+                    <h2>Web & App</h2>
+                    <h1>Developer</h1>
+                    <h3>.NET & JavaScript</h3>
+                    </div>
+                </div>
+                <div id="blue">
+                </div>
+                <div id="red">
+                </div>
+            </section>
         </article>
     </body>
 </html>
