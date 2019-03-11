@@ -3,11 +3,18 @@
     <head>
         <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Casey Brown Codes</title>
+    <title>Casey Codes</title>
     <style>
+        html, body {
+            padding: 0;
+            margin: 0;
+        }
         article {
             clear: both;
             min-height: 1000px;
+        }
+        html, body {
+            height: 100%;
         }
         header {
             height: 100px;
@@ -20,15 +27,22 @@
             margin-right: 10px;
             list-style: none;
         }
-        #splash {
-            height: 50%;
-            background-image: url("images/startrails_1920.jpg");
-            width: auto;
+        #splash{
+            margin: 0 auto 25px auto;
+        }
+        .responsive {
+            height: auto;
+            margin: 0 auto 25px auto;
+            max-width: 1000px;
+            text-align: center;
+            width: 100%;   
         }
     </style>    
     </head>
     <body>
         <header>
+            <div id="name">Casey
+            </div>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -39,7 +53,10 @@
             </nav>
         </header>
         <article>
+            <div>
             <div id="splash">
+                <img src="images/startrails_1920.jpg" class="responsive"/>
+            </div>
             </div>
         </article>
     </body>
