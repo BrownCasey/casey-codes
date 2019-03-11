@@ -31,11 +31,13 @@
         article {
             clear: both;
         }
+        header {
+            background-color: rgb(250, 250, 250);
+            color: rgb(25, 25, 25);
+            height: 70px;
+        }
         html, body {
             height: 100%;
-        }
-        header {
-            height: 70px;
         }
         nav ul {
             padding: 0 0 0 3px;
@@ -45,8 +47,8 @@
             margin-right: 10px;
             list-style: none;
         }
-        #red {
-            background-color: rgb(200, 0, 0);
+        #blue {
+            background-color: rgb(0, 0, 200);
             height: 100px;
             width: 100px;
             margin: auto;
@@ -57,8 +59,16 @@
             margin: auto;
             position: relative;
         }
-        #blue {
-            background-color: rgb(0, 0, 200);
+        #name {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-bottom: 80px;
+            padding: 8px;
+            width: 100px;
+        }
+        #red {
+            background-color: rgb(200, 0, 0);
             height: 100px;
             width: 100px;
             margin: auto;
@@ -73,20 +83,42 @@
             width: 100%;
             filter: grayscale(100%);
         }
-        .myName{
+        .letter {
+            background-color: rgb(250, 250, 250);
+            border: 1px solid black;
+            color: rgb(25, 25, 25);
+            display: inline-block;
+            text-align: center;
+            width: 20px;
+        }
+        .letter:nth-child(5n+1){
+            background-color: rgb(3, 3, 3);
+            color: rgb(220, 220, 220);
+        }
+        .webDev{
             position: absolute;
             top: 100px;
             width: 100%;
         }
-        .myName h1, .myName h2, .myName h3 {
+        .webDev h1, .webDev h2, .webDev h3 {
             text-align: center;
         }
     </style>    
     </head>
     <body>
         <header>
-            <div id="name">Casey
-            </div>
+            <span id="name">
+                <span class="letter">C</span>
+                <span class="letter">a</span>
+                <span class="letter">s</span>
+                <span class="letter">e</span>
+                <span class="letter">y</span>
+                <span class="letter">C</span>
+                <span class="letter">o</span>
+                <span class="letter">d</span>
+                <span class="letter">e</span>
+                <span class="letter">s</span>
+            </span>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -102,7 +134,7 @@
             <section>
                 <div id="green">
                     <img src="images/startrails_1920.jpg"/>
-                    <div class="myName">
+                    <div class="webDev">
                     <h2>Web & App</h2>
                     <h1>Developer</h1>
                     <h3>.NET & JavaScript</h3>
