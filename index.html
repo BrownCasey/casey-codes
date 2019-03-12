@@ -5,6 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Casey Codes</title>
     <style>
+        article {
+            height: auto;
+        }
         body {
             background-color: rgb(3, 3, 3);
             color: rgb(220,220,220);
@@ -36,7 +39,7 @@
             color: rgb(25, 25, 25);
             height: 70px;
         }
-        html, body {
+        html, body{
             height: 100%;
         }
         nav ul {
@@ -53,12 +56,6 @@
             width: 100px;
             margin: auto;
         }
-        #green {
-            height: auto;
-            max-width: 1920px;
-            margin: auto;
-            position: relative;
-        }
         #name {
             display: flex;
             flex-direction: row;
@@ -67,11 +64,31 @@
             padding: 8px;
             width: 100px;
         }
+        .project img {
+            width: 100%;
+            filter: opacity(50%);
+        }
+        #projects {
+            height: auto;
+            max-width: 1920px;
+            margin: auto;
+            position: relative;
+        }
+        #projects > img {
+            width: 100%;
+            filter: grayscale(100%);
+        }
         #red {
             background-color: rgb(200, 0, 0);
             height: 100px;
             width: 100px;
             margin: auto;
+        }
+        #splash {
+            height: auto;
+            max-width: 1920px;
+            margin: auto;
+            position: relative;
         }
         #white {
             background-color: rgb(250, 250, 250);
@@ -79,9 +96,29 @@
             width: 100%;
             margin: auto;
         }
-        div img {
+        #splash img {
             width: 100%;
             filter: grayscale(100%);
+        }
+        .bottom {
+            top: 240px;
+        }
+        .center {
+            left: 40%;
+        }
+        .circle {
+            background-color: red;
+            border-radius: 100%;
+            height: 100%;
+            width: 100%;
+        }
+        .large {
+            max-height: 250px;
+            max-width: 250px;
+        }
+        .left {
+            top: 100px;
+            left: 10%;
         }
         .letter {
             background-color: rgb(250, 250, 250);
@@ -95,6 +132,35 @@
             background-color: rgb(3, 3, 3);
             color: rgb(220, 220, 220);
         }
+        .medium {
+            max-height: 200px;
+            max-width: 200px;
+        }
+        .project {
+            height: 500px;
+            position: absolute;
+            width: 500px;
+        }
+        .blue {
+            background-color: #0000FF;
+        }
+        .green {
+            background-color: #00FF00;
+        }
+        .magenta {
+            background-color: #FF00FF;
+        }
+        .red {
+            background-color: #FF0000;
+        }
+        .right {
+            top: 110px;
+            left: 60%;
+        }
+        .small {
+            max-height: 150px;
+            max-width: 150px;
+        }
         .webDev{
             position: absolute;
             top: 100px;
@@ -102,6 +168,10 @@
         }
         .webDev h1, .webDev h2, .webDev h3 {
             text-align: center;
+        }
+        .xlarge {
+            max-height: 350px;
+            max-width: 350px;
         }
     </style>    
     </head>
@@ -130,9 +200,7 @@
         </header>
         <article>
             <section>
-            </section>
-            <section>
-                <div id="green">
+                <div id="splash">
                     <img src="images/startrails_1920.jpg"/>
                     <div class="webDev">
                     <h2>Web & App</h2>
@@ -145,6 +213,23 @@
                 <div id="white">
                 </div>
                 <div id="red">
+                </div>
+            </section>
+            <section id="projects">
+                <img src="images/cosmos_1920.jpg"/>
+                <div class="webDev">
+                    <div class="project left">
+                        <div class="small circle blue"><img src="images/g+200.png" class="circle"/></div>
+                    </div>
+                    <div class="project center">
+                        <div class="medium circle red"><img src="images/g+200.png" class="circle"/></div>
+                    </div>
+                    <div class="project right">
+                        <div class="large circle green"><img src="images/g+200.png" class="circle"/></div>
+                    </div>
+                    <div class="project center bottom">
+                        <div class="xlarge circle magenta"><img src="images/g+200.png" class="circle"/></div>
+                    </div>
                 </div>
             </section>
         </article>
