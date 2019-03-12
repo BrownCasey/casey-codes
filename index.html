@@ -5,8 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Casey Codes</title>
     <style>
-        article {
-            height: auto;
+        html, body, article, section{
+            height: 100%;
+            margin: 0;
         }
         body {
             background-color: rgb(3, 3, 3);
@@ -35,9 +36,12 @@
             clear: both;
         }
         header {
-            background-color: rgb(250, 250, 250);
+            background-color: rgb(230, 230, 230);
             color: rgb(25, 25, 25);
             height: 70px;
+            position: fixed;
+            z-index: 100;
+            width: 100%;
         }
         html, body{
             height: 100%;
@@ -157,6 +161,13 @@
             top: 110px;
             left: 60%;
         }
+        .scroller {
+                overflow-y: auto;
+                scroll-snap-type: y mandatory;
+            }
+        .scroll-section {
+            scroll-snap-align: start;
+        }
         .small {
             max-height: 150px;
             max-width: 150px;
@@ -177,18 +188,6 @@
     </head>
     <body>
         <header>
-            <span id="name">
-                <span class="letter">C</span>
-                <span class="letter">a</span>
-                <span class="letter">s</span>
-                <span class="letter">e</span>
-                <span class="letter">y</span>
-                <span class="letter">C</span>
-                <span class="letter">o</span>
-                <span class="letter">d</span>
-                <span class="letter">e</span>
-                <span class="letter">s</span>
-            </span>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -198,8 +197,8 @@
                 </ul>
             </nav>
         </header>
-        <article>
-            <section>
+        <article class="scroller">
+            <section class="scroll-section">
                 <div id="splash">
                     <img src="images/startrails_1920.jpg"/>
                     <div class="webDev">
@@ -215,7 +214,7 @@
                 <div id="red">
                 </div>
             </section>
-            <section id="projects">
+            <section id="projects" class="scroll-section">
                 <img src="images/cosmos_1920.jpg"/>
                 <div class="webDev">
                     <div class="project left">
@@ -231,6 +230,8 @@
                         <div class="xlarge circle magenta"><img src="images/g+200.png" class="circle"/></div>
                     </div>
                 </div>
+            </section>
+            <section class="scroll-section">
             </section>
         </article>
     </body>
