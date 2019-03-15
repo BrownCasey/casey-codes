@@ -105,15 +105,15 @@
             margin: auto;
             position: relative;
         }
+        #splash img {
+            width: 100%;
+            filter: grayscale(100%);
+        }
         #white {
             background-color: rgb(250, 250, 250);
             height: 100px;
             width: 100%;
             margin: auto;
-        }
-        #splash img {
-            width: 100%;
-            filter: grayscale(100%);
         }
         .bottom {
             top: 240px;
@@ -129,6 +129,21 @@
         }
         .em1-8{
             font-size: 1.8em;
+        }
+        .font-Garamond {
+            font-family: Garamond;
+        }
+        .font-Baskerville {
+            font-family: "Baskerville Old Face";
+        }
+        .font-Bodoni {
+            font-family: "Bodoni MT";
+        }
+        .font-Century {
+            font-family: Century;
+        }
+        .font-Helvetica {
+            font-family: Helvetica;
         }
         .large {
             max-height: 250px;
@@ -270,9 +285,36 @@
                 <div id="splash">
                     <img src="images/startrails_1920.jpg"/>
                     <div class="webDev">
-                    <h2>Web & App</h2>
-                    <h1>Developer</h1>
-                    <h3>.NET & JavaScript</h3>
+                    <h2 class="font-Garamond">Garamond</h2>
+                    <h2 class="font-Garamond">CASEY BROWN</h2>
+                    <h2 class="font-Garamond">Casey Brown</h2>
+                    <h2 class="font-Garamond"><i>Casey Brown</i></h2>
+                    <h1 class="font-Garamond">Developer</h1>
+                    <h3 class="font-Garamond">.NET & JavaScript</h3>
+                    <h2 class="font-Baskerville">Baskerville</h2>
+                    <h2 class="font-Baskerville">CASEY BROWN</h2>
+                    <h2 class="font-Baskerville">Casey Brown</h2>
+                    <h2 class="font-Baskerville"><i>Casey Brown</i></h2>
+                    <h1 class="font-Baskerville">Developer</h1>
+                    <h3 class="font-Baskerville">.NET & JavaScript</h3>
+                    <h2 class="font-Bodoni">Bodoni</h2>
+                    <h2 class="font-Bodoni">CASEY BROWN</h2>
+                    <h2 class="font-Bodoni">Casey Brown</h2>
+                    <h2 class="font-Bodoni"><i>Casey Brown</i></h2>
+                    <h1 class="font-Bodoni">Developer</h1>
+                    <h3 class="font-Bodoni">.NET & JavaScript</h3>
+                    <h2 class="font-Century">Century</h2>
+                    <h2 class="font-Century">CASEY BROWN</h2>
+                    <h2 class="font-Century">Casey Brown</h2>
+                    <h2 class="font-Century"><i>Casey Brown</i></h2>
+                    <h1 class="font-Century">Developer</h1>
+                    <h3 class="font-Century">.NET & JavaScript</h3>
+                    <h2 class="font-Helvetica">Helvetica</h2>
+                    <h2 class="font-Helvetica">CASEY BROWN</h2>
+                    <h2 class="font-Helvetica">Casey Brown</h2>
+                    <h2 class="font-Helvetica"><i>Casey Brown</i></h2>
+                    <h1 class="font-Helvetica">Developer</h1>
+                    <h3 class="font-Helvetica">.NET & JavaScript</h3>
                     </div>
                 </div>
                 <div id="blue">
@@ -282,7 +324,7 @@
                 <div id="red">
                 </div>
             </section>
-            <section id="projects" class="scroll-section">
+            <section id="projects" class="scroll-section" style="visibility: hidden">
                 <img src="images/cosmos_1920.jpg"/>
                 <div class="webDev">
                     <div class="project left">
