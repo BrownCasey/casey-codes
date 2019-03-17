@@ -122,7 +122,7 @@
             top: 240px;
         }
         .center {
-            left: 40%;
+            left: 35%;
         }
         .circle {
             background-color: red;
@@ -159,8 +159,13 @@
             max-width: 250px;
         }
         .left {
-            top: 100px;
             left: 10%;
+        }
+        .top {
+            top: 100px;
+        }
+        .middle {
+            top: 110px;
         }
         .letter {
             background-color: rgb(250, 250, 250);
@@ -196,8 +201,7 @@
             background-color: #FF0000;
         }
         .right {
-            top: 110px;
-            left: 60%;
+            left: 70%;
         }
         .scroller {
                 overflow-y: auto;
@@ -230,11 +234,16 @@
             .large {
                 max-height: 200px;
                 max-width: 200px;
-            }
+            }            
             .medium {
                 max-height: 160px;
                 max-width: 160px;
             }            
+            .project {
+                height: 400px;
+                position: absolute;
+                width: 400px;
+            }
             .small {
                 max-height: 120px;
                 max-width: 120px;
@@ -255,6 +264,11 @@
             .medium {
                 max-height: 130px;
                 max-width: 130px;
+            }
+            .project {
+                height: 300px;
+                position: absolute;
+                width: 300px;
             }            
             .small {
                 max-height: 95px;
@@ -264,26 +278,45 @@
                 max-height: 220px;
                 max-width: 220px;
             }
+            .center.bottom {
+                left: 10%;
+                top: 220px;
+            }
         }
         @media screen and (max-width:600px){
             .em3 {
                 font-size: 1.2em;
             }
             .large {
-                max-height: 130px;
-                max-width: 130px;
-            }
-            .medium {
-                max-height: 105px;
-                max-width: 105px;
+                max-height: 100px;
+                max-width: 100px;
             }            
-            .small {
+            .medium {
                 max-height: 75px;
                 max-width: 75px;
+            }            
+            .project {
+                height: 200px;
+                position: absolute;
+                width: 200px;
+            }
+            .small {
+                max-height: 50px;
+                max-width: 50px;
             }
             .xlarge {
                 max-height: 180px;
                 max-width: 180px;
+            }
+            .middle {
+                top: 75px;
+            }
+            .top {
+                top: 25px;
+            }
+            .center.bottom {
+                left: 10%;
+                top: 100px;
             }
         }
     </style>    
@@ -318,17 +351,17 @@
             <section id="projects" class="scroll-section">
                 <img src="images/cosmos_1920.jpg"/>
                 <div class="webDev">
-                    <div class="project left">
+                    <div class="project left top">
                         <div class="small circle blue"><img src="images/computer-1209641_1920.jpg" class="circle"/></div>
                     </div>
                     <div class="project center">
                         <div class="medium circle red"><img src="images/hummingbird-2139279_640trans.png" class="circle"/></div>
                     </div>
-                    <div class="project right">
-                        <div class="large circle green"><img src="images/opengraph-icon-200x200.png" class="circle"/></div>
+                    <div class="project right middle">
+                        <div class="medium circle green"><img src="images/opengraph-icon-200x200.png" class="circle"/></div>
                     </div>
                     <div class="project center bottom">
-                        <div class="xlarge circle magenta"><img src="images/GoldenConcept_1600-1040.jpg" class="circle"/></div>
+                        <div class="large circle magenta"><img src="images/GoldenConcept_1600-1040.jpg" class="circle"/></div>
                     </div>
                 </div>
             </section>
@@ -336,4 +369,5 @@
             </section>
         </article>
     </body>
+    <!-- JQ screen < 600 {<div class="project center bottom"> becomes <div class="project left bottom">} -->
 </html>
