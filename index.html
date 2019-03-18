@@ -4,6 +4,7 @@
         <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Casey Codes</title>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
     <style>
         a {
             color: rgb(220,220,220);
@@ -11,6 +12,29 @@
         }
         a:visited {
             color: rgb(220,220,220);
+        }
+        aside {
+            background-color: rgba(255, 255, 0, 0.8);
+            color: rgb(25, 25, 25);
+            left: 100%;
+            padding: 5px;
+            position: absolute;
+            top: 10%;
+            transition: transform 1s;
+            width: 100%;
+        }
+        aside ul li {
+            list-style: none;
+        }
+        #projects > aside {
+            font-size: 1.5em;
+            z-index: 1000;
+        }
+        #projects > aside > strong > a {
+            color: rgb(25, 25, 25);
+            line-height: 10px;
+            text-decoration: underline;
+            z-index: 100;
         }
         html, body, article, section{
             height: 100%;
@@ -65,6 +89,9 @@
             margin-bottom: 100px;
             transform: rotate(90deg);
         }
+        p {
+            line-height: 1;
+        }
         strong {
             font-weight: 900;
         }
@@ -81,12 +108,6 @@
             margin-bottom: 80px;
             padding: 8px;
             width: 100px;
-        }
-        .bg-black{
-            background-color: rgba(20, 20, 20, 0.8);
-        }
-        .project img {
-            width: 100%;
         }
         #projects {
             height: auto;
@@ -119,6 +140,21 @@
             height: 100px;
             width: 100%;
             margin: auto;
+        }
+        .bg-black{
+            background-color: rgba(20, 20, 20, 0.8);
+        }
+        .bg-blue {
+            background-color: #0000FF;
+        }
+        .bg-green {
+            background-color: #00FF00;
+        }
+        .bg-magenta {
+            background-color: #FF00FF;
+        }
+        .bg-red {
+            background-color: #FF0000;
         }
         .bottom {
             top: 240px;
@@ -155,18 +191,15 @@
         .font-Helvetica {
             font-family: Helvetica;
         }
+        .font-sans {
+            font-family: 'Titillium Web', sans-serif;
+        }
         .large {
             max-height: 250px;
             max-width: 250px;
         }
         .left {
             left: 10%;
-        }
-        .top {
-            top: 100px;
-        }
-        .middle {
-            top: 110px;
         }
         .letter {
             background-color: rgb(250, 250, 250);
@@ -184,22 +217,20 @@
             max-height: 200px;
             max-width: 200px;
         }
+        .middle {
+            top: 110px;
+        }
+        .overflow {
+            transform: translate(-20%, 0px);
+            transition: transform 1s;
+        }
         .project {
             height: 500px;
             position: absolute;
             width: 500px;
         }
-        .blue {
-            background-color: #0000FF;
-        }
-        .green {
-            background-color: #00FF00;
-        }
-        .magenta {
-            background-color: #FF00FF;
-        }
-        .red {
-            background-color: #FF0000;
+        .project img {
+            width: 100%;
         }
         .right {
             left: 70%;
@@ -214,6 +245,9 @@
         .small {
             max-height: 150px;
             max-width: 150px;
+        }
+        .top {
+            top: 100px;
         }
         .webDev{
             left: 20%;
@@ -284,7 +318,10 @@
                 top: 220px;
             }
         }
-        @media screen and (max-width:600px){
+        @media screen and (max-width:600px){            
+            aside {
+                top: 100%;
+            }
             .em3 {
                 font-size: 1.2em;
             }
@@ -295,6 +332,10 @@
             .medium {
                 max-height: 75px;
                 max-width: 75px;
+            }          
+            .overflow {
+                transform: translate(-60%, 0px);
+                transition: transform 1s;
             }            
             .project {
                 height: 200px;
@@ -325,7 +366,7 @@
     <body>
         <header>
             <nav>
-                <ul>
+                <ul class="font-sans">
                     <li class="em1-8"><a href="#splash">Home</a></li>
                     <li class="em1-8"><a href="#projects">Projects</a></li>
                     <li class="em1-8"><a href="#about">About</a></li>
@@ -338,8 +379,8 @@
                 <div id="splash">
                     <img src="images/startrails_1920.jpg"/>
                     <div class="webDev">
-                    <p class="font-Helvetica em3">Hello. My name is Casey and I use code to solve problems. Whether it is web development, QA testing or data analysis, I enjoy learning new things so I can improve processes for my team.</p>
-                    <p class="font-Helvetica"></p>
+                    <p class="font-sans em3">Hello. My name is Casey and I use code to solve problems. Whether it is web development, QA testing or data analysis, I enjoy learning new things so I can improve processes for my team.</p>
+                    <p class="font-sans"></p>
                     </div>
                 </div>
                 <div id="blue">
@@ -351,24 +392,75 @@
             </section>
             <section id="projects" class="scroll-section">
                 <img src="images/cosmos_1920.jpg"/>
+                <aside class="font-sans" id="aside1">
+                    <strong><a href="http://www.caseycodes.com/survey" target="_blank">Conference</a></strong>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                </aside>
+                <aside class="font-sans" id="aside2">
+                    <strong><a href="http://www.caseycodes.com/binoculars" target="_blank">Binoculars</a></strong>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                </aside>
+                <aside class="font-sans" id="aside3">
+                    <strong><a href="http://www.caseycodes.com/selenium" target="_blank">Selenium</a></strong>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JQuery</li>
+                    </ul>
+                </aside>
+                <aside class="font-sans" id="aside4">
+                    <strong><a href="http://www.caseycodes.com/tribute" target="_blank">Syd Mead</a></strong>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                </aside>
                 <div class="webDev">
                     <div class="project left top">
-                        <div class="small circle bg-black"><img src="images/computer-1209641_1920.jpg" class="circle"/></div>
+                        <div class="small circle bg-black" id="project1"><img src="images/computer-1209641_1920.jpg" class="circle"/></div>
                     </div>
                     <div class="project center">
-                        <div class="medium circle bg-black"><img src="images/hummingbird-2139279_640trans.png" class="circle"/></div>
+                        <div class="medium circle bg-black" id="project2"><img src="images/hummingbird-2139279_640trans.png" class="circle"/></div>
                     </div>
                     <div class="project right middle">
-                        <div class="medium circle bg-black"><img src="images/opengraph-icon-200x200.png" class="circle"/></div>
+                        <div class="medium circle bg-black" id="project3"><img src="images/opengraph-icon-200x200.png" class="circle"/></div>
                     </div>
                     <div class="project center bottom">
-                        <div class="large circle bg-black"><img src="images/GoldenConcept_1600-1040.jpg" class="circle"/></div>
+                        <div class="large circle bg-black" id="project4"><img src="images/GoldenConcept_1600-1040.jpg" class="circle"/></div>
                     </div>
                 </div>
             </section>
             <section id="about" class="scroll-section">
             </section>
         </article>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+        <script>$(document).ready(function() {
+            $("#project1").click(function(){
+                $(".overflow").removeClass("overflow");
+                $("#aside1").addClass('overflow');
+            });
+            $("#project2").click(function(){
+                $(".overflow").removeClass("overflow");
+                $("#aside2").addClass('overflow');
+            });
+            $("#project3").click(function(){
+                $(".overflow").removeClass("overflow");
+                $("#aside3").addClass('overflow');
+            });
+            $("#project4").click(function(){
+                $(".overflow").removeClass("overflow");
+                $("#aside4").addClass('overflow');
+            });
+        });
+        </script>
     </body>
-    <!-- JQ screen < 600 {<div class="project center bottom"> becomes <div class="project left bottom">} -->
 </html>
