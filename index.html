@@ -110,9 +110,14 @@
             width: 100px;
         }
         #projects {
-            height: auto;
+            background-image: url("images/cosmos_1920.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100%;
             max-width: 1920px;
             margin: auto;
+            overflow-x: hidden;
+            overflow-y: hidden;
             position: relative;
         }
         #projects > img {
@@ -126,14 +131,13 @@
             margin: auto;
         }
         #splash {
-            height: auto;
+            background-image: url("images/startrails_1920.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100%;
             max-width: 1920px;
             margin: auto;
             position: relative;
-        }
-        #splash img {
-            width: 100%;
-            filter: grayscale(100%);
         }
         #white {
             background-color: rgb(250, 250, 250);
@@ -377,21 +381,13 @@
         <article class="scroller">
             <section class="scroll-section">
                 <div id="splash">
-                    <img src="images/startrails_1920.jpg"/>
                     <div class="webDev">
                     <p class="font-sans em3">Hello. My name is Casey and I use code to solve problems. Whether it is web development, QA testing or data analysis, I enjoy learning new things so I can improve processes for my team.</p>
                     <p class="font-sans"></p>
                     </div>
                 </div>
-                <div id="blue">
-                </div>
-                <div id="white">
-                </div>
-                <div id="red">
-                </div>
             </section>
             <section id="projects" class="scroll-section">
-                <img src="images/cosmos_1920.jpg"/>
                 <aside class="font-sans" id="aside1">
                     <strong><a href="http://www.caseycodes.com/survey" target="_blank">Conference</a></strong>
                     <ul>
@@ -421,7 +417,7 @@
                         <li>CSS</li>
                     </ul>
                 </aside>
-                <div class="webDev">
+                <div id="project_bubbles" class="webDev">
                     <div class="project left top">
                         <div class="small circle bg-black" id="project1"><img src="images/computer-1209641_1920.jpg" class="circle"/></div>
                     </div>
