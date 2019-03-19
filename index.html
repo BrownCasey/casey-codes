@@ -28,6 +28,10 @@
             list-style: none;
             padding: 5px;
         }
+        #about {
+            background-color: rgb(220,220,220);
+            color: rgb(20, 20, 20);
+        }
         #projects > aside {
             font-size: 1.5em;
             z-index: 1000;
@@ -96,6 +100,24 @@
         }
         strong {
             font-weight: 900;
+        }
+        #hi {
+            left: 15%;
+            position: relative;
+            top: 10%;
+        }
+        #social {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            position: relative;
+            top: 25%;
+        }
+        #hi h1 {
+            color: rgb(25, 25, 25);
+            font-size: 8em;
+        }
+        #hi p {
+            font-size: 1.5em;
         }
         #blue {
             background-color: rgb(0, 0, 200);
@@ -172,6 +194,12 @@
             border-radius: 100%;
             height: 100%;
             width: 100%;
+        }
+        .col-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            position: relative;
+            top: 30%
         }
         .em1-8{
             font-size: 1.8em;
@@ -298,6 +326,10 @@
             .em3 {
                 font-size: 1.7em;
             }
+            .col-2 {
+                display: block;
+            }
+            
             .large {
                 max-height: 160px;
                 max-width: 160px;
@@ -322,6 +354,12 @@
             .center.bottom {
                 left: 10%;
                 top: 220px;
+            }            
+            #social {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                position: relative;
+                top: 25%;
             }
         }
         @media screen and (max-width:600px){            
@@ -366,6 +404,13 @@
                 left: 10%;
                 top: 100px;
             }
+            #social {
+                display: block;
+                margin: auto;
+            }
+            #social div {
+                margin: auto;
+            }
         }
     </style>    
     </head>
@@ -376,7 +421,7 @@
                     <li class="em1-8"><a href="#splash">Home</a></li>
                     <li class="em1-8"><a href="#projects">Projects</a></li>
                     <li class="em1-8"><a href="#about">About</a></li>
-                    <li class="em1-8"><a href="blog">Blog</a></li>
+                    <li class="em1-8"><a href="blog" target="_blank">Blog</a></li>
                 </ul>
             </nav>
         </header>
@@ -423,7 +468,7 @@
                         <li>CSS</li>
                     </ul>
                 </aside>
-                <div id="project_bubbles" class="webDev">
+                <div class="webDev">
                     <div class="project left top">
                         <div class="small circle bg-black" id="project1"><img src="images/computer-1209641_1920.jpg" class="circle"/></div>
                     </div>
@@ -439,6 +484,19 @@
                 </div>
             </section>
             <section id="about" class="scroll-section">
+                <div class="col-2">
+                    <div id="hi">
+                        <h1>Say Hi.</h1>
+                        <p>I would love to hear about what you do.</p>
+                    </div>
+                    <div id="social">
+                        <div></div>
+                        <div class="small circle"><img src="images/GitHub-Mark-120px-plus.png"/></div>
+                        <div class="small circle"><img src="images/GitHub-Mark-120px-plus.png"/></div>
+                        <div class="small circle"><img src="images/GitHub-Mark-120px-plus.png"/></div>
+                        <div></div>
+                    </div>
+                </div>
             </section>
         </article>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
