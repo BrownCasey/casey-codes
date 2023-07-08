@@ -3,120 +3,13 @@
     <head>
         <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Casey Codes</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <title>Casey Codes | Data Portfolio</title>
     <link rel="stylesheet" href="css/style.css"/>
     </head>
     <body>
-        <header>
-            <nav>
-                <ul class="font-sans">
-                    <li class="em1-8"><a href="#splash">Home</a></li>
-                    <li class="em1-8"><a href="#projects">Projects</a></li>
-                    <li class="em1-8"><a href="#about">About</a></li>
-                    <li class="em1-8"><a href="blog" target="_blank">Blog</a></li>
-                </ul>
-            </nav>
-        </header>
-        <article class="scroller">
-            <section class="scroll-section">
-                <div id="splash">
-                    <div class="webDev">
-                    <p class="font-sans em3">Hello. My name is Casey and I use code to solve problems. Whether it is web development, QA testing or data analysis, I enjoy learning new things so I can improve processes for my team.</p>
-                    <p class="font-sans"></p>
-                    </div>
-                </div>
-            </section>
-            <section id="projects" class="scroll-section">
-                <aside class="font-sans" id="aside1">
-                    <strong><a href="http://www.caseycodes.com/survey" target="_blank">Conference</a></strong>
-                    <span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                    </ul>
-                </aside>
-                <aside class="font-sans" id="aside2">
-                    <strong><a href="http://www.caseycodes.com/binoculars" target="_blank">Binoculars</a></strong>
-                    <span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                    </ul>
-                </aside>
-                <aside class="font-sans" id="aside3">
-                    <strong><a href="http://www.caseycodes.com/selenium" target="_blank">Selenium</a></strong>
-                    <span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JQuery</li>
-                    </ul>
-                </aside>
-                <aside class="font-sans" id="aside4">
-                    <strong><a href="http://www.caseycodes.com/tribute" target="_blank">Syd Mead</a></strong>
-                    <span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                    </ul>
-                </aside>
-                <div class="webDev">
-                    <div class="project left top">
-                        <div class="small circle bg-black" id="project1"><img src="images/computer-1209641_1920.jpg" class="circle"/></div>
-                    </div>
-                    <div class="project center">
-                        <div class="medium circle bg-black" id="project2"><img src="images/hummingbird-2139279_640trans.png" class="circle"/></div>
-                    </div>
-                    <div class="project right middle">
-                        <div class="medium circle bg-black" id="project3"><img src="images/opengraph-icon-200x200.png" class="circle"/></div>
-                    </div>
-                    <div class="project center bottom">
-                        <div class="large circle bg-black" id="project4"><img src="images/GoldenConcept_1600-1040.jpg" class="circle"/></div>
-                    </div>
-                </div>
-            </section>
-            <section id="about" class="scroll-section">
-                <div class="col-2">
-                    <div id="hi">
-                        <h1>Say Hi.</h1>
-                        <p>I would love to hear about what you do.</p>
-                    </div>
-                    <div id="social">
-                        <div></div>
-                        <div class="small circle"><a href="mailto:caseycodes@gmail.com"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a></div>
-                        <div class="small circle"><a href="https://www.linkedin.com/in/casey-brown-94a126114"><img src="images/In-2CRev-128px-TM.png"/></a></div>
-                        <div class="small circle"><a href="https://github.com/browncasey"><span class="glyphicon"></span><img src="images/GitHub-Mark-120px-plus.png"/></a></div>
-                        <div></div>
-                    </div>
-                </div>
-            </section>
-        </article>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-        </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-        </script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-        </script>
-        <script>$(document).ready(function() {
-            $("#project1").click(function(){
-                $(".overflow").removeClass("overflow");
-                $("#aside1").addClass('overflow');
-            });
-            $("#project2").click(function(){
-                $(".overflow").removeClass("overflow");
-                $("#aside2").addClass('overflow');
-            });
-            $("#project3").click(function(){
-                $(".overflow").removeClass("overflow");
-                $("#aside3").addClass('overflow');
-            });
-            $("#project4").click(function(){
-                $(".overflow").removeClass("overflow");
-                $("#aside4").addClass('overflow');
-            });
-        });
-        </script>
+        <main>
+        <h1>Casey Brown</h1>
+        <p>Data Engineer</p>
+        </main>
     </body>
 </html>
